@@ -1,0 +1,69 @@
+﻿  OOP.cpp
+C:\Users\mylap\source\repos\OOP\OOP\clsDate.h(7,9): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'OOP.cpp')
+  
+C:\Users\mylap\source\repos\OOP\OOP\clsString.h(38,19): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'OOP.cpp')
+  
+C:\Users\mylap\source\repos\OOP\OOP\clsString.h(43,23): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'OOP.cpp')
+  
+C:\Users\mylap\source\repos\OOP\OOP\clsString.h(112,25): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'OOP.cpp')
+  
+C:\Users\mylap\source\repos\OOP\OOP\clsString.h(139,25): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'OOP.cpp')
+  
+C:\Users\mylap\source\repos\OOP\OOP\clsString.h(170,24): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'OOP.cpp')
+  
+C:\Users\mylap\source\repos\OOP\OOP\clsString.h(214,16): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'OOP.cpp')
+  
+C:\Users\mylap\source\repos\OOP\OOP\clsString.h(463,21): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'OOP.cpp')
+  
+C:\Users\mylap\source\repos\OOP\OOP\clsUtil.h(8,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'OOP.cpp')
+  
+C:\Users\mylap\source\repos\OOP\OOP\clsUtil.h(192,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'OOP.cpp')
+  
+C:\Users\mylap\source\repos\OOP\OOP\clsUsers.h(162,9): warning C4240: nonstandard extension used: access to 'clsUsers::stRegisterLogin' now defined to be 'public', previously it was defined to be 'private'
+  (compiling source file 'OOP.cpp')
+      C:\Users\mylap\source\repos\OOP\OOP\clsUsers.h(27,9):
+      see declaration of 'clsUsers::stRegisterLogin'
+  
+C:\Users\mylap\source\repos\OOP\OOP\clsInputValidate.h(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'OOP.cpp')
+  
+C:\Users\mylap\source\repos\OOP\OOP\clsBankClient.h(177,9): warning C4240: nonstandard extension used: access to 'clsBankClient::stTransferLog' now defined to be 'public', previously it was defined to be 'private'
+  (compiling source file 'OOP.cpp')
+      C:\Users\mylap\source\repos\OOP\OOP\clsBankClient.h(23,9):
+      see declaration of 'clsBankClient::stTransferLog'
+  
+C:\Users\mylap\source\repos\OOP\OOP\clsBankClient.h(35,42): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'OOP.cpp')
+  
+C:\Users\mylap\source\repos\OOP\OOP\clsBankClient.h(46,41): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'OOP.cpp')
+  
+C:\Users\mylap\source\repos\OOP\OOP\clsBankClient.h(47,46): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'OOP.cpp')
+  
+C:\Users\mylap\source\repos\OOP\OOP\clsBankClient.h(368,23): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'OOP.cpp')
+  
+C:\Users\mylap\source\repos\OOP\OOP\clsBankClient.h(380,23): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'OOP.cpp')
+  
+C:\Users\mylap\source\repos\OOP\OOP\clsTotalBalanceScreen.h(54,58): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'OOP.cpp')
+  
+C:\Users\mylap\source\repos\OOP\OOP\clsCurrency.h(34,9): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'OOP.cpp')
+  
+C:\Users\mylap\source\repos\OOP\OOP\clsBankClient.h(318,1): warning C4715: 'clsBankClient::Save': not all control paths return a value
+C:\Users\mylap\source\repos\OOP\OOP\clsBankClient.h(383,1): warning C4715: 'clsBankClient::Withdraw': not all control paths return a value
+C:\Users\mylap\source\repos\OOP\OOP\clsUsers.h(300,1): warning C4715: 'clsUsers::Save': not all control paths return a value
+  OOP.vcxproj -> C:\Users\mylap\source\repos\OOP\x64\Debug\OOP.exe
