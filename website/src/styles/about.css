@@ -1,0 +1,132 @@
+/* ==========================================================================
+   About page — story, timeline, values
+   ========================================================================== */
+
+.about__heroImg { margin-bottom: clamp(3rem, 7vh, 5.5rem); }
+.about__heroImg .reveal-img { border-radius: 3px; }
+.about__caption {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--ink-faint);
+}
+
+.about__story {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(2.4rem, 6vw, 6rem);
+  padding-bottom: var(--sp);
+}
+.about__storySticky { position: sticky; top: calc(var(--nav-h) + 2rem); align-self: start; }
+.about__storyTitle {
+  font-family: var(--ff-serif);
+  font-size: clamp(2rem, 3.6vw, 3rem);
+  font-weight: 480;
+  letter-spacing: -0.015em;
+  line-height: 1.06;
+  margin-top: 0.9rem;
+  max-width: 14ch;
+}
+.about__storyBody p {
+  max-width: 58ch;
+  color: var(--ink-soft);
+  font-size: clamp(1rem, 0.98rem + 0.2vw, 1.12rem);
+  line-height: 1.78;
+}
+.about__storyBody p + p { margin-top: 1.3em; }
+.about__sign { margin-top: 2.4rem; }
+.about__signName {
+  font-family: var(--ff-serif);
+  font-style: italic;
+  font-size: 1.55rem;
+  color: var(--copper-text);
+}
+.about__signRole { font-size: 0.74rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-faint); margin-top: 0.3rem; }
+
+.about__duo {
+  display: flex;
+  align-items: flex-end;
+  gap: clamp(1.2rem, 3vw, 2.6rem);
+  padding-bottom: var(--sp);
+}
+.about__duoImg--a { width: 46%; }
+.about__duoImg--b { width: 32%; margin-bottom: clamp(1rem, 4vw, 3.4rem); }
+.about__duoImg--b .reveal-img, .about__duoImg--a .reveal-img { border-radius: 3px; }
+
+/* Timeline */
+.about__timeline { padding-block: var(--sp); }
+.about__timelineTitle {
+  font-family: var(--ff-serif);
+  font-size: clamp(2rem, 4.4vw, 3.4rem);
+  font-weight: 480;
+  letter-spacing: -0.015em;
+  line-height: 1.04;
+  margin: 0.9rem 0 clamp(2.4rem, 6vh, 4rem);
+}
+.tl__item {
+  display: grid;
+  grid-template-columns: clamp(90px, 12vw, 150px) 1fr;
+  gap: clamp(1.4rem, 4vw, 3.6rem);
+  padding-block: clamp(1.8rem, 4vh, 2.6rem);
+  border-top: 1px solid var(--line-light);
+}
+.tl__item:last-child { border-bottom: 1px solid var(--line-light); }
+.tl__year {
+  font-family: var(--ff-serif);
+  font-style: italic;
+  font-size: clamp(1.4rem, 2.8vw, 2.1rem);
+  color: var(--copper-bright);
+}
+.tl__body h3 { font-family: var(--ff-serif); font-size: clamp(1.15rem, 2vw, 1.4rem); font-weight: 500; }
+.tl__body p { color: var(--cream-soft); font-size: 0.97rem; max-width: 60ch; margin-top: 0.5rem; }
+
+/* Values */
+.about__values { padding-block: var(--sp); }
+.about__valuesTitle {
+  font-family: var(--ff-serif);
+  font-size: clamp(2rem, 4.4vw, 3.4rem);
+  font-weight: 480;
+  letter-spacing: -0.015em;
+  line-height: 1.04;
+  margin: 0.9rem 0 clamp(2.4rem, 6vh, 4rem);
+  max-width: 18ch;
+}
+.about__valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+.value-card { background: var(--cream); padding: clamp(1.7rem, 3.4vw, 2.6rem); transition: background-color 0.45s; }
+.value-card:hover { background: var(--sand); }
+.value-card__n { font-family: var(--ff-serif); font-style: italic; font-size: 1.1rem; color: var(--copper-text); }
+.value-card h3 { font-family: var(--ff-serif); font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 510; margin-top: 0.9rem; }
+.value-card p { color: var(--ink-soft); font-size: 0.95rem; margin-top: 0.6rem; max-width: 44ch; }
+
+.about__cta { padding-block: clamp(4.5rem, 10vh, 7rem); text-align: center; }
+.about__ctaTitle {
+  font-family: var(--ff-serif);
+  font-size: clamp(2rem, 4.4vw, 3.4rem);
+  font-weight: 480;
+  letter-spacing: -0.015em;
+  line-height: 1.06;
+}
+.about__ctaRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  margin-top: 2.1rem;
+}
+
+@media (max-width: 860px) {
+  .about__story { grid-template-columns: 1fr; }
+  .about__storySticky { position: static; }
+  .about__duo { flex-direction: column; align-items: stretch; }
+  .about__duoImg--a, .about__duoImg--b { width: 100%; margin-bottom: 0; }
+  .about__valuesGrid { grid-template-columns: 1fr; }
+  .tl__item { grid-template-columns: 1fr; gap: 0.6rem; }
+}

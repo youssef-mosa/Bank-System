@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Contact page
+   ========================================================================== */
+
+.contact { background: var(--cream); }
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2.6rem, 6vw, 6rem);
+  align-items: start;
+  padding-bottom: var(--sp);
+}
+.contact__block { padding-block: 1.9rem; border-top: 1px solid var(--line); }
+.contact__block:first-child { border-top: none; padding-top: 0.4rem; }
+.contact__blockTitle {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--copper-text);
+  margin-bottom: 1.05rem;
+}
+.contact__big { font-family: var(--ff-serif); font-size: clamp(1.4rem, 2.6vw, 1.9rem); font-weight: 480; letter-spacing: -0.01em; }
+.contact__hint { font-size: 0.8rem; font-style: italic; color: var(--ink-faint); margin-top: 0.85rem; }
+.contact__hours > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-block: 0.5rem;
+}
+.contact__hours dt { font-weight: 700; font-size: 0.92rem; }
+.contact__hours dd { font-family: var(--ff-serif); font-size: 1.02rem; }
+.contact__links li { padding-block: 0.3rem; }
+.contact__cta { margin-top: 1.8rem; }
+
+.contact__form {
+  background: var(--sand);
+  padding: clamp(1.9rem, 4vw, 2.9rem);
+  border-radius: 4px;
+}
+.contact__formTitle { font-family: var(--ff-serif); font-size: clamp(1.5rem, 2.8vw, 2rem); font-weight: 480; }
+.contact__formLede { font-size: 0.9rem; color: var(--ink-soft); margin: 0.7rem 0 1.8rem; }
+.field { display: block; margin-bottom: 1.35rem; }
+.field__label {
+  display: block;
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 0.45rem;
+}
+.field input, .field textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--line-strong);
+  padding: 0.65rem 0;
+  font-size: 1.02rem;
+  color: var(--ink);
+  resize: vertical;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.field input:focus, .field textarea:focus {
+  outline: none;
+  border-bottom-color: var(--copper-text);
+  box-shadow: 0 1px 0 var(--copper-text);
+}
+.contact__formHint { font-size: 0.74rem; font-style: italic; color: var(--ink-faint); margin-top: 1.1rem; }
+
+@media (max-width: 860px) {
+  .contact__grid { grid-template-columns: 1fr; }
+}
